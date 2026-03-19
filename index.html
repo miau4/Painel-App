@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Netsimon Panel</title>
+
+<style>
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #22c55e;
+    color: white;
+}
+
+.box {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🚀 NETSIMON APP</h2>
+
+<div class="box">
+<h3>Criar Usuário</h3>
+<input id="user" placeholder="Usuário"><br>
+<input id="pass" placeholder="Senha"><br>
+<input id="limit" placeholder="Limite"><br>
+<button onclick="createUser()">Criar</button>
+</div>
+
+<div class="box">
+<h3>Usuários Online</h3>
+<button onclick="getOnline()">Ver Online</button>
+<p id="online"></p>
+</div>
+
+<div class="box">
+<h3>Listar Usuários</h3>
+<button onclick="listUsers()">Listar</button>
+<p id="users"></p>
+</div>
+
+<div class="box">
+<h3>Deletar Usuário</h3>
+<input id="deluser" placeholder="Usuário"><br>
+<button onclick="deleteUser()">Deletar</button>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
